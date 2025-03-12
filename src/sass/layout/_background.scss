@@ -1,0 +1,11 @@
+.background {
+    @apply bg-red-500 fixed inset-0 pointer-events-none overflow-hidden;
+  
+    &__circle {
+      @apply w-[100px] h-[100px] absolute rounded-full bg-blue-500;
+    }
+  
+    &__overlay {
+      @apply fixed inset-0 bg-white/10 backdrop-blur-[20px] pointer-events-none z-[1] bg-gradient-to-br from-transparent via-white/5 to-transparent;
+    }
+  }
