@@ -1,4 +1,11 @@
-.card {
-    padding: 2em;
-    background-color: aqua;
+.testcomponent {
+  @apply p-5 bg-gray-100 rounded-lg shadow-md;
+  
+  &__title {
+    @apply text-xl font-bold mb-2;
   }
+  
+  &__content {
+    @apply text-gray-700;
+  }
+}

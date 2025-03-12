@@ -1,7 +1,6 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import TestComponent from './components/TestComponent'
-import './App.css'
 
 function App() {
   return (
