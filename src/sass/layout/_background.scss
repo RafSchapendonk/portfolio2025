@@ -1,11 +1,36 @@
 .background {
-    @apply bg-red-500 fixed inset-0 pointer-events-none overflow-hidden;
-  
-    &__circle {
-      @apply w-[100px] h-[100px] absolute rounded-full bg-blue-500;
-    }
-  
-    &__overlay {
-      @apply fixed inset-0 bg-white/10 backdrop-blur-[20px] pointer-events-none z-[1] bg-gradient-to-br from-transparent via-white/5 to-transparent;
-    }
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ef4444; // equivalent to red-500
+  pointer-events: none;
+  overflow: hidden;
+
+  &__circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #3b82f6; // equivalent to blue-500
   }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    pointer-events: none;
+    z-index: 1;
+    background-image: linear-gradient(
+      to bottom right,
+      transparent,
+      rgba(255, 255, 255, 0.05) 50%,
+      transparent
+    );
+  }
+}
